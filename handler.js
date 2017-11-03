@@ -1,5 +1,4 @@
-'use strict';
-var AWS = require("aws-sdk");
+import AWS from 'aws-sdk';
 
 module.exports.ping = (event, context, callback) => {
   var sns = new AWS.SNS({

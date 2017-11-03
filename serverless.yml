@@ -20,7 +20,9 @@ functions:
 plugins:
   - serverless-offline-sns
   - serverless-offline
+  - serverless-webpack
 custom:
   serverless-offline-sns:
     port: 4002
     debug: false
+  webpackIncludeModules: true
