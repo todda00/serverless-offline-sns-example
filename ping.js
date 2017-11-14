@@ -1,6 +1,6 @@
 import AWS from 'aws-sdk';
 
-module.exports.ping = (event, context, callback) => {
+module.exports.handler = (event, context, callback) => {
   var sns = new AWS.SNS({
     endpoint: "http://127.0.0.1:4002",
     region: "us-east-1",
@@ -21,9 +21,4 @@ module.exports.ping = (event, context, callback) => {
 
     callback(null, response);
   });
-};
-
-module.exports.pong = (event, context, callback) => {
-  console.log("pong");
-  callback(null, {});
 };

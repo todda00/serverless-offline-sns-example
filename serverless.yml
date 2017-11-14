@@ -7,22 +7,23 @@ provider:
 
 functions:
   pong:
-    handler: handler.pong
+    handler: pong.handler
     events:
       - sns: test-topic
   ping:
-    handler: handler.ping
+    handler: ping.handler
     events:
       - http:
           path: ping
           method: get
           cors: true
 plugins:
-  - serverless-offline-sns
-  - serverless-offline
   - serverless-webpack
+  - serverless-offline
+  - serverless-offline-sns
+
 custom:
   serverless-offline-sns:
     port: 4002
-    debug: false
+    debug: true
   webpackIncludeModules: true

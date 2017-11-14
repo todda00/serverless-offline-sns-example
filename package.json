@@ -12,7 +12,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "^6.24.1",
     "serverless-offline": "^3.16.0",
-    "serverless-offline-sns": "^0.24.0",
+    "serverless-offline-sns": "^0.25.0",
     "serverless-webpack": "^4.0.0",
     "webpack": "^3.8.1",
     "webpack-node-externals": "^1.6.0"
@@ -20,6 +20,5 @@
   "scripts": {
     "start": "serverless offline start"
   },
-  "author": "Matt James <matthew.stephen.james@gmail.com>",
   "license": "MIT"
 }
